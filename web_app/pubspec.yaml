@@ -32,20 +32,24 @@ flutter:
   assets:
     - assets/images/cartao.jpg
     - assets/images/por_do_sol.jpeg
+    - assets/images/random_image.jfif
 
   fonts:
     - family: Dosis
       fonts:
         - asset: assets/fonts/Dosis-Regular.ttf
           style: normal
+
     - family: Felix Titling
       fonts:
         - asset: assets/fonts/felix-titling-mt.ttf
           style: normal
+
     - family: Open Sans
       fonts:
         - asset: assets/fonts/OpenSans-Regular.ttf
           style: normal
+          
     - family: Quattrocento
       fonts:
         - asset: assets/fonts/Quattrocento-Regular.ttf

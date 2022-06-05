@@ -10,7 +10,10 @@ class TeamDescriptionWidget extends StatelessWidget {
     return Column(
       children: const [
         SessionTitleWidget(text: "NOSSA EQUIPE"),
-        SessionTextWidget(text: "TEXTO DESCRITIVO DA EQUIPE"),
+        SessionTextWidget(
+          text: "TEXTO DESCRITIVO DA EQUIPE",
+          textAlign: TextAlign.center,
+        ),
       ],
     );
   }

@@ -12,12 +12,14 @@ class ServiceImageWidget extends StatelessWidget {
       width: 190,
       color: Colors.pink,
       child: Stack(
-        children: const [
-          Center(
-            child: Text("ÁREA DE ATUAÇÃO"),
+        fit: StackFit.expand,
+        children: [
+          Image.asset(
+            "assets/images/random_image.jfif",
+            fit: BoxFit.cover,
           ),
-          Positioned(
-            bottom: 0,
+          const Positioned(
+            bottom: -1,
             left: 10,
             right: 10,
             child: Center(

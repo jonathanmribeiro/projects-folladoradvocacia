@@ -18,8 +18,16 @@ class ServicesSession extends StatelessWidget {
           const Center(
             child: SessionTitleWidget(text: "ÁREAS DE ATUAÇÃO"),
           ),
-          const Center(
-            child: SessionTextWidget(text: "texto das áreas de identificação"),
+          Container(
+            margin: const EdgeInsets.all(50),
+            child: const SessionTextWidget(
+              text:
+                  "texto das áreas de atuação texto das áreas de atuação texto "
+                  "das áreas de atuação texto das áreas de atuação texto das "
+                  "áreas de atuação texto das áreas de atuação texto das áreas "
+                  "de atuação texto das áreas de atuação ",
+              textAlign: TextAlign.center,
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
