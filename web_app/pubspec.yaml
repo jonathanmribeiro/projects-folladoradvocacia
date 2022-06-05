@@ -29,6 +29,10 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
+  assets:
+    - assets/images/cartao.jpg
+    - assets/images/por_do_sol.jpeg
+
   fonts:
     - family: Dosis
       fonts:

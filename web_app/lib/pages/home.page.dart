@@ -13,14 +13,16 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarWidget(),
-      body: ListView(
-        children: const [
-          SliderSession(),
-          ServicesSession(),
-          TeamSession(),
-          PublicationsSession(),
-          ContactSession(),
-        ],
+      body: OverflowBox(
+        child: ListView(
+          children: const [
+            SliderSession(),
+            ServicesSession(),
+            TeamSession(),
+            PublicationsSession(),
+            ContactSession(),
+          ],
+        ),
       ),
     );
   }
