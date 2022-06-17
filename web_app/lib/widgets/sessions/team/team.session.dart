@@ -11,7 +11,7 @@ class TeamSession extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 696,
-      color: Colors.blueGrey,
+      color: Theme.of(context).colorScheme.background,
       child: Stack(
         alignment: Alignment.center,
         children: [

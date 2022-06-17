@@ -11,9 +11,17 @@ class TeamCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Theme.of(context).colorScheme.background,
       height: 234,
       width: 297,
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.background,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            color: Theme.of(context).colorScheme.onBackground.withAlpha(75),
+          )
+        ],
+      ),
       child: ListView(
         children: const [
           TeamCardImageWidget(),

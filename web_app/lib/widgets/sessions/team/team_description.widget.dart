@@ -7,14 +7,25 @@ class TeamDescriptionWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        SessionTitleWidget(text: "NOSSA EQUIPE"),
-        SessionTextWidget(
-          text: "TEXTO DESCRITIVO DA EQUIPE",
-          textAlign: TextAlign.center,
+    return Container(
+      height: 250,
+      width: 500,
+      padding: const EdgeInsets.only(left: 120, right: 120),
+      child: Transform.translate(
+        offset: const Offset(0, -70),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: const [
+            SessionTitleWidget(text: "NOSSA EQUIPE"),
+            SessionTextWidget(
+              text:
+                  "TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA "
+                  "EQUIPE TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA EQUIPE",
+              textAlign: TextAlign.center,
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }

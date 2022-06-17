@@ -16,9 +16,9 @@ class HomePage extends StatelessWidget {
       body: OverflowBox(
         child: ListView(
           children: const [
-            TeamSession(),
             SliderSession(),
             ServicesSession(),
+            TeamSession(),
             PublicationsSession(),
             ContactSession(),
           ],
