@@ -24,6 +24,9 @@ class TeamSession extends StatelessWidget {
                 children: const [
                   TeamCardWidget(),
                   TeamDescriptionWidget(),
+                  SizedBox(
+                    width: 300,
+                  ),
                 ],
               ),
               Row(

@@ -5,6 +5,12 @@ class TeamSessionBackgroundWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("session background");
+    return Container(
+      alignment: Alignment.centerRight,
+      padding: const EdgeInsets.only(right: 100),
+      child: Image.asset(
+        "assets/images/equipe.png",
+      ),
+    );
   }
 }

@@ -33,6 +33,7 @@ flutter:
     - assets/images/cartao.jpg
     - assets/images/por_do_sol.jpeg
     - assets/images/random_image.jfif
+    - assets/images/equipe.png
 
   fonts:
     - family: Dosis
