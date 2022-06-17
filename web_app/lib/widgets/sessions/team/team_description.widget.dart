@@ -9,8 +9,8 @@ class TeamDescriptionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 250,
-      width: 500,
-      padding: const EdgeInsets.only(left: 120, right: 120),
+      width: 350,
+      padding: const EdgeInsets.only(left: 75, right: 75),
       child: Transform.translate(
         offset: const Offset(0, -70),
         child: Column(

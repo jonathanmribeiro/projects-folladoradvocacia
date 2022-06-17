@@ -9,16 +9,30 @@ TextStyle descriptionTitleStyle = TextStyle(
 );
 
 class ServiceImageDescriptionWidget extends StatelessWidget {
-  const ServiceImageDescriptionWidget({Key? key}) : super(key: key);
+  const ServiceImageDescriptionWidget({
+    Key? key,
+    required this.description,
+  }) : super(key: key);
+
+  final String description;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.center,
+      alignment: Alignment.topCenter,
       height: 100,
-      color: Theme.of(context).colorScheme.background,
+      padding: const EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.background,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            color: Theme.of(context).colorScheme.onBackground.withAlpha(75),
+          )
+        ],
+      ),
       child: Text(
-        "Descrição da área de atuação",
+        description,
         style: descriptionTitleStyle,
         textAlign: TextAlign.center,
       ),

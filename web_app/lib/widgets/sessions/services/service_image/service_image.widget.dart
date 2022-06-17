@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import 'service_image_description.widget.dart';
 
 class ServiceImageWidget extends StatelessWidget {
-  const ServiceImageWidget({Key? key}) : super(key: key);
+  const ServiceImageWidget({
+    Key? key,
+    required this.description,
+  }) : super(key: key);
+
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +23,15 @@ class ServiceImageWidget extends StatelessWidget {
             "assets/images/random_image.jfif",
             fit: BoxFit.cover,
           ),
-          const Positioned(
-            bottom: -1,
+          Positioned(
+            bottom: 0,
             left: 10,
             right: 10,
-            child: Center(
-              child: ServiceImageDescriptionWidget(),
+            child: Transform.translate(
+              offset: const Offset(0, 20),
+              child: ServiceImageDescriptionWidget(
+                description: description,
+              ),
             ),
           ),
         ],

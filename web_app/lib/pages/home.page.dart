@@ -13,6 +13,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarWidget(),
+      backgroundColor: Theme.of(context).colorScheme.background,
       body: OverflowBox(
         child: ListView(
           children: const [

@@ -12,6 +12,8 @@ class ServicesSession extends StatelessWidget {
     return Container(
       height: 696,
       alignment: Alignment.center,
+      color: Theme.of(context).colorScheme.background,
+      margin: const EdgeInsets.all(50),
       child: ListView(
         shrinkWrap: true,
         children: [
@@ -33,11 +35,11 @@ class ServicesSession extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
-              ServiceImageWidget(),
-              ServiceImageWidget(),
-              ServiceImageWidget(),
-              ServiceImageWidget(),
-              ServiceImageWidget(),
+              ServiceImageWidget(description: "ÁREA DE ATUAÇÃO 1"),
+              ServiceImageWidget(description: "ÁREA DE ATUAÇÃO 2"),
+              ServiceImageWidget(description: "ÁREA DE ATUAÇÃO 3"),
+              ServiceImageWidget(description: "ÁREA DE ATUAÇÃO 4"),
+              ServiceImageWidget(description: "ÁREA DE ATUAÇÃO 5"),
             ],
           )
         ],

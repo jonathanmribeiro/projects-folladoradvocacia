@@ -12,6 +12,7 @@ class TeamSession extends StatelessWidget {
     return Container(
       height: 696,
       color: Theme.of(context).colorScheme.background,
+      margin: const EdgeInsets.all(50),
       child: Stack(
         alignment: Alignment.center,
         children: [
