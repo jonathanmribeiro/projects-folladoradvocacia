@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/widgets/sessions/publications/publication_video/publication_video.widget.dart';
 
+import '../../common/session_text/session_text.widget.dart';
+import '../../common/session_title/session_title.widget.dart';
+import 'publication_video/publication_video.widget.dart';
 import 'publications_background.widget.dart';
 
 class PublicationsSession extends StatelessWidget {
@@ -9,20 +11,37 @@ class PublicationsSession extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.lightGreen,
-      height: 696,
+      color: Theme.of(context).colorScheme.background,
       child: Stack(
+        alignment: Alignment.center,
         children: [
           const PublicationsBackgroundWidget(),
-          Center(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                PublicationVideoWidget(),
-                PublicationVideoWidget(),
-                PublicationVideoWidget(),
-                PublicationVideoWidget(),
+          Container(
+            padding: const EdgeInsets.only(left: 50, right: 50),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SessionTitleWidget(text: "Publicações"),
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 2,
+                  child: const SessionTextWidget(
+                    text:
+                        "descrição descrição descrição descrição descrição descrição descrição descrição descrição "
+                        "descrição descrição descrição descrição descrição descrição descrição descrição descrição "
+                        "descrição descrição descrição descrição descrição descrição descrição descrição descrição ",
+                    textAlign: TextAlign.start,
+                  ),
+                ),
+                const SizedBox(height: 75),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: const [
+                    PublicationVideoWidget(),
+                    PublicationVideoWidget(),
+                    PublicationVideoWidget(),
+                    PublicationVideoWidget(),
+                  ],
+                ),
               ],
             ),
           ),

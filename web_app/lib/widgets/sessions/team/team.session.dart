@@ -12,7 +12,7 @@ class TeamSession extends StatelessWidget {
     return Container(
       height: 696,
       color: Theme.of(context).colorScheme.background,
-      margin: const EdgeInsets.all(50),
+      margin: const EdgeInsets.only(left: 50, top: 50, bottom: 50),
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -22,11 +22,11 @@ class TeamSession extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  TeamCardWidget(),
-                  TeamDescriptionWidget(),
+                children: [
+                  const TeamCardWidget(),
+                  const TeamDescriptionWidget(),
                   SizedBox(
-                    width: 300,
+                    width: MediaQuery.of(context).size.width / 3,
                   ),
                 ],
               ),

@@ -7,9 +7,10 @@ class TeamSessionBackgroundWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.centerRight,
-      padding: const EdgeInsets.only(right: 100),
       child: Image.asset(
         "assets/images/equipe.png",
+        width: MediaQuery.of(context).size.width / 2.5,
+        fit: BoxFit.cover,
       ),
     );
   }
