@@ -8,8 +8,8 @@ class ContactSession extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 686,
+    return SizedBox(
+      height: 600,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: const [
