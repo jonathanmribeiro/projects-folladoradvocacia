@@ -5,6 +5,10 @@ class ContactMapWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("Contact Map");
+    return Container(
+      color: Colors.pink,
+      padding: const EdgeInsets.all(50),
+      width: MediaQuery.of(context).size.width / 2,
+    );
   }
 }

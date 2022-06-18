@@ -22,7 +22,7 @@ class ServicesSession extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.all(50),
-            child: const SessionTextWidget(
+            child: SessionTextWidget(
               text:
                   "texto das áreas de atuação texto das áreas de atuação texto "
                   "das áreas de atuação texto das áreas de atuação texto das "

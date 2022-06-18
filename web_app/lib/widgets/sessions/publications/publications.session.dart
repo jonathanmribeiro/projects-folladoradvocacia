@@ -24,7 +24,7 @@ class PublicationsSession extends StatelessWidget {
                 const SessionTitleWidget(text: "Publicações"),
                 SizedBox(
                   width: MediaQuery.of(context).size.width / 2,
-                  child: const SessionTextWidget(
+                  child: SessionTextWidget(
                     text:
                         "descrição descrição descrição descrição descrição descrição descrição descrição descrição "
                         "descrição descrição descrição descrição descrição descrição descrição descrição descrição "

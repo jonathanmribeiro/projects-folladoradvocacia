@@ -17,11 +17,11 @@ class HomePage extends StatelessWidget {
       body: OverflowBox(
         child: ListView(
           children: const [
+            ContactSession(),
             SliderSession(),
             ServicesSession(),
             TeamSession(),
             PublicationsSession(),
-            ContactSession(),
           ],
         ),
       ),

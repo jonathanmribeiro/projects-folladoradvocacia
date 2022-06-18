@@ -6,9 +6,17 @@ class PublicationVideoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.indigo,
       height: 347,
       width: 235,
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.background,
+        boxShadow: [
+          BoxShadow(
+            blurRadius: 10,
+            color: Theme.of(context).colorScheme.onBackground.withAlpha(75),
+          )
+        ],
+      ),
       child: const Text("Publication video"),
     );
   }

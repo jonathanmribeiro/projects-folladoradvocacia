@@ -15,8 +15,8 @@ class TeamDescriptionWidget extends StatelessWidget {
         offset: const Offset(0, -70),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: const [
-            SessionTitleWidget(text: "NOSSA EQUIPE"),
+          children: [
+            const SessionTitleWidget(text: "NOSSA EQUIPE"),
             SessionTextWidget(
               text:
                   "TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA EQUIPE TEXTO DESCRITIVO DA "

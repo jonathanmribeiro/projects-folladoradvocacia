@@ -2,18 +2,21 @@ import 'package:flutter/material.dart';
 
 import '../../../themes/colors.theme.dart';
 
-TextStyle sessionTextStyle = TextStyle(
-  color: primaryColorMap[600],
-  fontSize: 14,
-  fontFamily: "Open Sans",
-);
+TextStyle sessionTextStyle = const TextStyle();
 
 class SessionTextWidget extends StatelessWidget {
-  const SessionTextWidget({
+  SessionTextWidget({
     Key? key,
+    double fontSize = 14,
     required this.text,
     required this.textAlign,
-  }) : super(key: key);
+  }) : super(key: key) {
+    sessionTextStyle = TextStyle(
+      color: primaryColorMap[600],
+      fontSize: fontSize,
+      fontFamily: "Open Sans",
+    );
+  }
 
   final String text;
   final TextAlign textAlign;
