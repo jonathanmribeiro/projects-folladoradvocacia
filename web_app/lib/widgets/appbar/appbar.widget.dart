@@ -11,11 +11,23 @@ class AppBarWidget extends StatelessWidget implements PreferredSize {
     return AppBar(
       elevation: 0,
       leading: const AppBarLeadingWidget(),
-      actions: const [
-        AppBarAction(),
-        AppBarAction(),
-        AppBarAction(),
-        AppBarAction(),
+      actions: [
+        AppBarAction(
+          text: "Equipe",
+          onPressed: () {},
+        ),
+        AppBarAction(
+          text: "Áreas de atuação",
+          onPressed: () {},
+        ),
+        AppBarAction(
+          text: "Publicações",
+          onPressed: () {},
+        ),
+        AppBarAction(
+          text: "Contato",
+          onPressed: () {},
+        ),
       ],
     );
   }
